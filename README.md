@@ -24,13 +24,12 @@ Amazon DynamoDB provides a persistence layer where data can be stored by the API
 
 JavaScript executed in the browser sends and receives data from a public backend API built using Lambda and API Gateway.
 
-## The first task needs 500 as input and the second needs auth key abcd1234sadfsdf and the next task needs the uuid as the response which is obtained from the lambda invocation
-
 This site was built using [GitHub Pages](https://pages.github.com/).
 
 Final hint:
 
-# The root cause is the API authorizer does not have enough permissions to Invoke the Lambda authorizer function
+The first task needs 500 as input and the second needs auth key abcd1234sadfsdf and the next task needs the uuid as the response which is obtained from the lambda invocation
+The root cause is the API authorizer does not have enough permissions to Invoke the Lambda authorizer function
 
 - You need to update the Resource-based policy of the function named "Jamchallenge-auth-lambda-proxy-function-1"
 
